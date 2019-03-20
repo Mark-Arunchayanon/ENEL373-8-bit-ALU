@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Wed Mar 13 17:29:45 2019">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="72bd5ed632ee4e06ba8c3ef8610e3af9" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="4" type="JavaHandler"/>
+<property name="CloseProject" value="2" type="JavaHandler"/>
+<property name="EditRedo" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="7" type="JavaHandler"/>
+<property name="NewFile" value="2" type="JavaHandler"/>
+<property name="NewProject" value="2" type="JavaHandler"/>
+<property name="OpenProject" value="8" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="ShowSource" value="1" type="JavaHandler"/>
+<property name="ShowView" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BCD_to_7SEG.vhd, 0, 3" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 1, 447" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 1, 519" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 104, 162" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 105, 372" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 106, 159" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 108, 331" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 108, 515" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 109, 164" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 111, 230" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 111, 352" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 112, 85" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 113, 321" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 113, 448" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 113, 70" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 113, 76" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 113, 77" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 114, 213" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 115, 508" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 115, 77" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 116, 332" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 118, 441" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 122, 307" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 122, 418" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 123, 468" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 125, 414" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 126, 477" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 126, 73" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 127, 208" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 130, 172" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 130, 240" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 131, 464" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 132, 527" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 133, 279" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 136, 159" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 136, 461" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 139, 518" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 140, 479" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 144, 460" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 145, 467" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 151, 467" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 152, 396" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 153, 156" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 155, 466" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 156, 500" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 157, 522" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 158, 37" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 161, 473" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 163, 33" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 164, 278" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 164, 516" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 173, 212" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 174, 199" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 176, 183" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 177, 156" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 178, 133" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 180, 131" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 180, 146" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 184, 267" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 185, 408" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 185, 420" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 187, 523" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 188, 473" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 190, 208" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 190, 208, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 195, 161" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 197, 202" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 197, 472" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 204, 455" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 204, 532" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 211, 231" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 211, 241" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 211, 395" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 213, 457" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 214, 157" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 215, 518" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 220, 456" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 224, 194" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 232, 165" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 239, 388" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 245, 226" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 251, 247" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 252, 230" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 252, 401" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 253, 232" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 256, 234" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 26, 473" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 260, 285" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 267, 249" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 271, 196" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 271, 230" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 28, 454" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 280, 339" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 291, 212" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 297, 381" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 30, 417" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 305, 259" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 306, 195" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 315, 297" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 322, 194" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 323, 51" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 325, 60" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 328, 231" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 33, 468" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 33, 472" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 339, 165" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 34, 480" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 344, 130" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 345, 225" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 346, 272" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 348, 200" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 353, 95" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 358, 131" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 358, 196" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 361, 208" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 362, 195" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 364, 254" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 380, 364" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 381, 285" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 383, 293" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 385, 76" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 388, 224" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 389, 194" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 39, 414" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 39, 455" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 393, 220" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 395, 76" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 396, 199" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 404, 200" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 413, 370" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 428, 195" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 43, 468" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 432, 180" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 433, 194" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 452, 186" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 457, 333" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 47, 446" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 48, 471" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 49, 163" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 5, 471" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 51, 457" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 543, 436" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 55, 471" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 552, 413" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 68, 449" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 89, 535" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 9, 499" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 93, 451" value="1" type="GuiResourceData"/>
+<property name="BCD_to_7SEG.vhd, 99, 384" value="1" type="GuiResourceData"/>
+<property name="Counter.vhd, 398, 139" value="1" type="GuiResourceData"/>
+<property name="Elaboration, Elaboration" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
+<property name="Implementation, Implementation" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="2" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 122, 214" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 226, 232" value="1" type="GuiResourceData"/>
+<property name="Nexys4DDR_Master.xdc, 358, 195" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, mux" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, mux_dual_4_to_1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, VHDL, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_ARCHITECTURE_NAME, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; false ; 0 ; 0, 0, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; false ; 0 ; 0, 0, false, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; false ; 0 ; 0, 1, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; true ; 0 ; 0, 0, true, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, Go To Source" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_NEW_FILE, New File..." value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_OPEN_PROJECT, Open Project..." value="3" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN, Run Simulation" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Nexys4DDR_Master.xdc], 13, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Nexys4DDR_Master.xdc], 13, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Nexys4DDR_Master.xdc], 14, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, Nexys4DDR_Master.xdc], 14, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 12" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, BCD_to_7SEG - Behavioral (BCD_to_7SEG.vhd" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, Counter.vhd], 6, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, Counter.vhd], 6, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, BCD_to_7SEG.vhd], 3, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, BCD_to_7SEG.vhd], 3, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, Counter.vhd], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, Counter.vhd], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, mux_dual_4_to_1.vhd], 4, false" value="8" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, mux_dual_4_to_1.vhd], 4, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, two_digit_counter_for_PL2_lab_top_level_part_soln.vhd], 4, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, two_digit_counter_for_PL2_lab_top_level_part_soln.vhd], 4, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files, two_digit_counter_for_PL2_lab_top_level_part_soln.vhd], 5, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files], 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, counter - behav (four_bit_counter_with_clear.vhd" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, counter_top_level - Behavioral (two_digit_counter_for_PL2_lab_top_level_part_soln.vhd" value="20" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files], 17" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Non-module Files], 18" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Syntax Error Files], 17" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 15" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 16" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 15" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Project Settings], 1, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EDIT, Edit" value="13" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EXPORT, Export" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="26" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FLOW, Flow" value="8" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_HELP, Help" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_TOOLS, Tools" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_VIEW, View" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_WINDOW, Window" value="4" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File..." value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, Copy sources into project, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StaleMoreAction_FORCE_UP_TO_DATE, Force up-to-date" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, more info" value="2" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_ADD_ELEMENT, Add Definition" value="1" type="GuiResourceData"/>
+<property name="RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="RDIResource.HJFileChooserHelpers_JUMP_TO_RECENT_PROJECT_DIRECTORY, (String" value="2" type="GuiResourceData"/>
+<property name="RDIResource.MainWinMenuMgr_LAYOUT, Layout" value="2" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_REDO, redo" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_UNDO, undo" value="10" type="GuiResourceData"/>
+<property name="Simulation, Simulation" value="1" type="GuiResourceData"/>
+<property name="Synthesis, Synthesis" value="1" type="GuiResourceData"/>
+<property name="four_bit_counter_with_clear.vhd, 259, 396" value="1" type="GuiResourceData"/>
+<property name="four_bit_counter_with_clear.vhd, 341, 114" value="1" type="GuiResourceData"/>
+<property name="four_bit_counter_with_clear.vhd, 400, 89" value="1" type="GuiResourceData"/>
+<property name="four_bit_counter_with_clear.vhd, 442, 130" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 100, 537" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 101, 484" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 105, 504" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 107, 497" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 111, 471" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 123, 372" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 123, 519" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 132, 284" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 139, 351" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 148, 408" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 148, 504" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 151, 407" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 155, 470" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 157, 520" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 170, 476" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 170, 486" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 181, 194" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 186, 199" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 191, 280" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 193, 430" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 205, 367" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 206, 194" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 209, 456" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 211, 449" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 212, 451" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 220, 458" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 227, 518" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 228, 172" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 229, 194" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 240, 504" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 243, 549" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 246, 429" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 246, 517" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 248, 519" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 249, 275" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 249, 280" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 249, 430" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 249, 515" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 250, 434" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 251, 514" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 259, 354" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 260, 522" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 261, 500" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 263, 333" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 263, 434" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 266, 468" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 269, 509" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 270, 484" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 273, 197" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 288, 215" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 289, 198" value="2" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 293, 438" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 296, 349" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 3, 321" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 315, 214" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 329, 456" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 335, 451" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 342, 345" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 36, 365" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 360, 182" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 368, 360" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 389, 508" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 63, 492" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 65, 494" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 66, 62" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 91, 452" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 94, 382" value="1" type="GuiResourceData"/>
+<property name="mux_dual_4_to_1.vhd, 94, 430" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 108, 144" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 121, 380" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 125, 408" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 133, 179" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 137, 144" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 151, 227" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 199, 198" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 199, 237" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 211, 86" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 219, 163" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 260, 360" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 262, 414" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 263, 323" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 273, 121" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 277, 84" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 301, 203" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 306, 440" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 324, 334" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 331, 442" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 37, 145" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 37, 295" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 378, 290" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 38, 347" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 40, 410" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 52, 279" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 53, 453" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 63, 450" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 68, 223" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 72, 224" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 72, 450" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 72, 450, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 75, 191" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 81, 298" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 87, 282" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 87, 282, false, true, false, false, false" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 900, 295" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 92, 232" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 92, 448" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 93, 240" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 945, 302" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 96, 309" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 97, 279" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 97, 279, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 98, 283" value="1" type="GuiResourceData"/>
+<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 98, 283, false, true, false, false, false" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
