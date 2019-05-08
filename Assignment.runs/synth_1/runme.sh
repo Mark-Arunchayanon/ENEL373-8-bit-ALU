@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='P:/ENEL373/labs/Week3Lab3Project2/Week3Lab3Project2.runs/synth_1'
+HD_PWD='P:/ENEL373/Lab_A01_group_15/Assignment.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log counter_top_level.vds -m64 -mode batch -messageDb vivado.pb -notrace -source counter_top_level.tcl
+EAStep vivado -log alu_design.vds -m64 -mode batch -messageDb vivado.pb -notrace -source alu_design.tcl
