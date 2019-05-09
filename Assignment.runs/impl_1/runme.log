@@ -1,0 +1,128 @@
+
+*** Running vivado
+    with args -log alu_design.vdi -applog -m64 -messageDb vivado.pb -mode batch -source alu_design.tcl -notrace
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source alu_design.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_B'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_G'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED16_R'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CA'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CB'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CD'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CE'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CF'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CG'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DP'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 464.375 ; gain = 256.902
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[0] has multiple drivers: LED_reg[0]/Q, alu_data_out_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[1] has multiple drivers: LED_reg[1]/Q, alu_data_out_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[2] has multiple drivers: LED_reg[2]/Q, alu_data_out_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[3] has multiple drivers: LED_reg[3]/Q, alu_data_out_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[4] has multiple drivers: alu_data_out_reg[4]/Q, LED_reg[4]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[5] has multiple drivers: alu_data_out_reg[5]/Q, LED_reg[5]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[6] has multiple drivers: alu_data_out_reg[6]/Q, LED_reg[6]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net LED_OBUF[7] has multiple drivers: alu_data_out_reg[7]/Q, LED_reg[7]/Q.
+INFO: [Project 1-461] DRC finished with 8 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 469.813 ; gain = 5.438
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 28 Warnings, 24 Critical Warnings and 9 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu May 09 17:24:17 2019...
