@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu May 09 19:01:38 2019
-# Process ID: 15120
+# Start of session at: Thu May 09 20:45:36 2019
+# Process ID: 11272
 # Current directory: P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.runs/impl_1
 # Command line: vivado.exe -log alu_design.vdi -applog -messageDb vivado.pb -mode batch -source alu_design.tcl -notrace
 # Log file: P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.runs/impl_1/alu_design.vdi

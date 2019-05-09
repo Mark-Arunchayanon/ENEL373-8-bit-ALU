@@ -48,6 +48,7 @@ set_msg_config -id {HDL 9-1654} -limit 100000
 start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint alu_design_routed.dcp
   set_property webtalk.parent_dir P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.cache/wt [current_project]
   catch { write_mem_info -force alu_design.mmi }

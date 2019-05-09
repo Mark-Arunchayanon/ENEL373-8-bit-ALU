@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1557386806">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1557392282">
   <File Type="RDS-PROPCONSTRS" Name="alu_design_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="alu_design.tcl"/>
   <File Type="RDS-RDS" Name="alu_design.vds"/>
