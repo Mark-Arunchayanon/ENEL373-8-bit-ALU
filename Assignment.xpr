@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.xpr">
+<Project Version="7" Minor="14" Path="P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="79df0979aadd4d3cb5d01a104c6445d8"/>
@@ -77,6 +77,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/alu_op.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/BCD_sevenseg.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

@@ -66,7 +66,12 @@ component register2 port(
                           );
 end component;
 
-component
+component BCD_sevenseg port(
+                          SW: in STD_LOGIC_VECTOR (7 downto 0);
+                          CA,CB,CC,CD,CE,CF,CG : out STD_LOGIC;
+                          AN : out STD_LOGIC_VECTOR (0 to 7)
+                          );
+end component;
 
 begin
 
