@@ -31,13 +31,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity register1 is
+entity register2 is
     Port ( 
            sw2_input : in STD_LOGIC;
-           state2 : in INTEGER;
-           reg1_out : out STD_LOGIC
+           state1 : in INTEGER;
+           reg2_out : out STD_LOGIC
            );
-end register1;
+end register2;
 
 architecture Behavioral of register1 is
 

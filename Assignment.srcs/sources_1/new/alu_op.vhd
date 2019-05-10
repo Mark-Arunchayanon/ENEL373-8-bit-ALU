@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 05/10/2019 02:54:34 PM
+-- Create Date: 10.05.2019 23:05:11
 -- Design Name: 
--- Module Name: register1 - Behavioral
+-- Module Name: alu_op - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,15 +31,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity register1 is
-    Port ( 
-           sw2_input : in STD_LOGIC;
-           state2 : in INTEGER;
-           reg1_out : out STD_LOGIC
-           );
-end register1;
+entity alu_op is
+--  Port ( );
+end alu_op;
 
-architecture Behavioral of register1 is
+architecture Behavioral of alu_op is
 
 begin
 

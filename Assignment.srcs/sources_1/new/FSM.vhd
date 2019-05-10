@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity FSM is
   Port ( 
-         CLK100MHZ : in STD_LOGIC;
+         clock : in STD_LOGIC;
          buttonU : in STD_LOGIC;
          buttonC : in STD_LOGIC;
          buttonD : in STD_LOGIC;
@@ -47,10 +47,10 @@ architecture Behavioral of FSM is
 signal counter : INTEGER range 0 to 3 :=0;
 
 begin
-    fsm_design: process (CLK100MHZ)	
+    fsm_design: process (clock)	
      --variable data8_out : std_logic_vector (7 downto 0);
 		begin
-		 if (CLK100MHZ'Event and CLK100MHZ ='1') then 
+		 if (clock'Event and clock ='1') then 
             if (buttonU = '1') then 
                 if (counter /= 1) then
                     counter <= counter + 1;
