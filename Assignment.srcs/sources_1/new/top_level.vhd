@@ -66,7 +66,14 @@ component register2 port(
                           );
 end component;
 
-component
+component alu_op Port ( 
+                        state3 : in INTEGER;
+                        operand1 : in STD_LOGIC_VECTOR(7 downto 0);
+                        operand2 : in STD_LOGIC_VECTOR(7 downto 0);
+                        operation : in STD_LOGIC_VECTOR(7 downto 0);
+                        alu_out : out STD_LOGIC_VECTOR(7 downto 0)
+                        );
+end component;
 
 begin
 

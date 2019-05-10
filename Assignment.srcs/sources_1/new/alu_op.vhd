@@ -32,7 +32,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity alu_op is
---  Port ( );
+    Port ( 
+           state3 : in INTEGER;
+           operand1 : in STD_LOGIC_VECTOR(7 downto 0);
+           operand2 : in STD_LOGIC_VECTOR(7 downto 0);
+           operation : in STD_LOGIC_VECTOR(7 downto 0);
+           alu_out : out STD_LOGIC_VECTOR(7 downto 0)
+           );
 end alu_op;
 
 architecture Behavioral of alu_op is
