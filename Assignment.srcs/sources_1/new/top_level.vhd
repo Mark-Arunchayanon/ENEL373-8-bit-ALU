@@ -53,14 +53,14 @@ component FSM port(
 end component;
 
 component register1 port(
-                          sw_input : in STD_LOGIC_VECTOR(7 downto 0);
+                          sw1_input : in STD_LOGIC_VECTOR(7 downto 0);
                           state1 : in INTEGER;
                           reg1_out : out STD_LOGIC_VECTOR(7 downto 0)
                           );
 end component;
 
 component register2 port(
-                          sw_inout : in STD_LOGIC_VECTOR(7 downto 0);
+                          sw2_input : in STD_LOGIC_VECTOR(7 downto 0);
                           state2 : in INTEGER;
                           reg2_out : out STD_LOGIC_VECTOR(7 downto 0)
                           );
