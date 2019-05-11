@@ -33,15 +33,24 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity register1 is
     Port ( 
-           sw1_input : in STD_LOGIC;
-           state2 : in INTEGER;
-           reg1_out : out STD_LOGIC
+           sw1_input : in STD_LOGIC_VECTOR(7 downto 0);
+           state1 : in INTEGER;
+           reg1_out : out STD_LOGIC_VECTOR(7 downto 0)
            );
 end register1;
 
 architecture Behavioral of register1 is
 
+signal stored_data : STD_LOGIC_VECTOR(7 downto 0);
+
 begin
-
-
+    register1 : process (state1)
+    begin
+        if (state1 = 1) then 
+            stored_data <= sw1_input;
+        end if;
+        
+        reg1_out <= stored_data;
+    
+    end process;
 end Behavioral;

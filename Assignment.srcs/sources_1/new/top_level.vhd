@@ -66,6 +66,7 @@ component register2 port(
                           );
 end component;
 
+<<<<<<< HEAD
 component alu_op Port ( 
                         state3 : in INTEGER;
                         operand1 : in STD_LOGIC_VECTOR(7 downto 0);
@@ -73,6 +74,13 @@ component alu_op Port (
                         operation : in STD_LOGIC_VECTOR(7 downto 0);
                         alu_out : out STD_LOGIC_VECTOR(7 downto 0)
                         );
+=======
+component BCD_sevenseg port(
+                          SW: in STD_LOGIC_VECTOR (7 downto 0);
+                          CA,CB,CC,CD,CE,CF,CG : out STD_LOGIC;
+                          AN : out STD_LOGIC_VECTOR (0 to 7)
+                          );
+>>>>>>> 838ecdeaf2d6c1997666df1c72434e1cf9c95f80
 end component;
 
 begin

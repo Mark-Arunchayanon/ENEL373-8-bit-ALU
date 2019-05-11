@@ -57,11 +57,12 @@ begin
                end if;
             end if;   
             if(BTND = '1')then
-                C1: case SW is
-                when "00000001" => alu_data_out <= data_reg1 + data_reg2;
-                when "00000010"  => alu_data_out <= data_reg1 - data_reg2;
-                when "00000011"  => alu_data_out <= data_reg1 or data_reg2; 
-                when others => alu_data_out <= data_reg1 and data_reg2;
+                C1: case SW(1 downto 0) is
+                when "00" => alu_data_out <= data_reg1 + data_reg2;
+                when "01" => alu_data_out <= data_reg1 - data_reg2;
+                when "10" => alu_data_out <= data_reg1 or data_reg2; 
+                when "11" => alu_data_out <= data_reg1 and data_reg2; 
+                when others => alu_data_out <= data_reg1 - data_reg1;
                 end case C1;
                 if(counter /= 3) then
                     counter <= counter + 1;
