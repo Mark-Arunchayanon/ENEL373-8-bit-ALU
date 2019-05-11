@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log alu_design.vds -m64 -mode batch -messageDb vivado.pb -notrace -source alu_design.tcl
+    with args -log top_level.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
 
 
 ****** Vivado v2016.2 (64-bit)
@@ -8,28 +8,52 @@
   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source alu_design.tcl -notrace
+source top_level.tcl -notrace
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2016.2/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-Command: synth_design -top alu_design -part xc7a100tcsg324-3
+Command: synth_design -top top_level -part xc7a100tcsg324-3
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4188 
+INFO: Helper process launched with PID 14496 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 277.984 ; gain = 70.598
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 278.328 ; gain = 70.871
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'alu_design' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:34]
-WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:40]
-WARNING: [Synth 8-614] signal 'data_reg1' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:40]
-WARNING: [Synth 8-614] signal 'data_reg2' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:40]
-WARNING: [Synth 8-614] signal 'alu_data_out' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'alu_design' (1#1) [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'top_level' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/top_level.vhd:43]
+INFO: [Synth 8-3491] module 'FSM' declared at 'P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/FSM.vhd:34' bound to instance 'U1' of component 'FSM' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/top_level.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'FSM' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/FSM.vhd:45]
+WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/FSM.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (1#1) [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/FSM.vhd:45]
+INFO: [Synth 8-3491] module 'register1' declared at 'P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register1.vhd:34' bound to instance 'U2' of component 'register1' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/top_level.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'register1' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register1.vhd:42]
+WARNING: [Synth 8-614] signal 'sw1_input' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register1.vhd:47]
+WARNING: [Synth 8-614] signal 'stored_data' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register1.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'register1' (2#1) [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register1.vhd:42]
+INFO: [Synth 8-3491] module 'register2' declared at 'P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register2.vhd:34' bound to instance 'U3' of component 'register2' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/top_level.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'register2' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register2.vhd:42]
+WARNING: [Synth 8-614] signal 'sw2_input' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register2.vhd:47]
+WARNING: [Synth 8-614] signal 'stored_data' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register2.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'register2' (3#1) [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register2.vhd:42]
+INFO: [Synth 8-3491] module 'alu_op' declared at 'P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:36' bound to instance 'U4' of component 'alu_op' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/top_level.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'alu_op' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:47]
+WARNING: [Synth 8-614] signal 'operation' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:53]
+WARNING: [Synth 8-614] signal 'operand1' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:53]
+WARNING: [Synth 8-614] signal 'operand2' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:53]
+WARNING: [Synth 8-614] signal 'end_result' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'alu_op' (4#1) [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:47]
+INFO: [Synth 8-3491] module 'led_output' declared at 'P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:34' bound to instance 'U5' of component 'led_output' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/top_level.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'led_output' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:44]
+WARNING: [Synth 8-614] signal 'reg1' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:49]
+WARNING: [Synth 8-614] signal 'reg2' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:49]
+WARNING: [Synth 8-614] signal 'alu_out' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:49]
+WARNING: [Synth 8-614] signal 'output' is read in the process but is not in the sensitivity list [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'led_output' (5#1) [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (6#1) [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/top_level.vhd:43]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 315.426 ; gain = 108.039
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 315.715 ; gain = 108.258
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -39,7 +63,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 315.426 ; gain = 108.039
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 315.715 ; gain = 108.258
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-3
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -47,35 +71,45 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alu_design_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/alu_design_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/constrs_1/imports/Downloads/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 610.836 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 593.293 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:58]
-WARNING: [Synth 8-327] inferring latch for variable 'LED_reg' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_design.vhd:72]
+INFO: [Synth 8-5545] ROM "stored_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "stored_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:56]
+INFO: [Synth 8-5545] ROM "end_result" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "output" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'stored_data_reg' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register1.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'stored_data_reg' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/register2.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'end_result_reg' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/alu_op.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg' [P:/Courses/ENCE373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/led_output.vhd:52]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -91,12 +125,13 @@ Detailed RTL Component Info :
 	   3 Input      8 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -104,18 +139,36 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module alu_design 
+Module FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module register1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module register2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module alu_op 
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input      8 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 3     
-	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module led_output 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -128,14 +181,19 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 403.449
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "U2/stored_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "U3/stored_data" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "U4/end_result" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "U5/output" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 593.293 ; gain = 385.836
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -145,18 +203,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (LED_reg[7]) is unused and will be removed from module alu_design.
-WARNING: [Synth 8-3332] Sequential element (LED_reg[6]) is unused and will be removed from module alu_design.
-WARNING: [Synth 8-3332] Sequential element (LED_reg[5]) is unused and will be removed from module alu_design.
-WARNING: [Synth 8-3332] Sequential element (LED_reg[4]) is unused and will be removed from module alu_design.
-WARNING: [Synth 8-3332] Sequential element (LED_reg[3]) is unused and will be removed from module alu_design.
-WARNING: [Synth 8-3332] Sequential element (LED_reg[2]) is unused and will be removed from module alu_design.
-WARNING: [Synth 8-3332] Sequential element (LED_reg[1]) is unused and will be removed from module alu_design.
-WARNING: [Synth 8-3332] Sequential element (LED_reg[0]) is unused and will be removed from module alu_design.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 593.293 ; gain = 385.836
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -170,10 +220,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 593.293 ; gain = 385.836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -185,16 +235,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 596.875 ; gain = 389.418
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -211,7 +261,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -224,7 +274,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -236,25 +286,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -273,38 +323,48 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     2|
 |3     |LUT1   |     1|
-|4     |LUT3   |    10|
-|5     |LUT4   |     1|
-|6     |LUT5   |     8|
-|7     |LUT6   |    10|
-|8     |FDRE   |    26|
-|9     |IBUF   |    13|
-|10    |OBUF   |     8|
+|4     |LUT2   |     5|
+|5     |LUT3   |     7|
+|6     |LUT4   |     1|
+|7     |LUT5   |    16|
+|8     |LUT6   |     1|
+|9     |FDRE   |     2|
+|10    |LD     |    24|
+|11    |LDC    |     8|
+|12    |IBUF   |    13|
+|13    |OBUF   |     8|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    80|
-+------+---------+-------+------+
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |    89|
+|2     |  U1     |FSM        |    17|
+|3     |  U2     |register1  |     8|
+|4     |  U3     |register2  |    16|
+|5     |  U4     |alu_op     |    18|
+|6     |  U5     |led_output |     8|
++------+---------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 610.836 ; gain = 108.039
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 610.836 ; gain = 403.449
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 596.875 ; gain = 111.840
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 596.875 ; gain = 389.418
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 32 instances were transformed.
+  LD => LDCE: 24 instances
+  LDC => LDCE: 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-15 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+39 Infos, 22 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 610.836 ; gain = 403.449
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 610.836 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri May 10 20:42:21 2019...
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 597.363 ; gain = 389.906
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 597.363 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 11 22:14:58 2019...

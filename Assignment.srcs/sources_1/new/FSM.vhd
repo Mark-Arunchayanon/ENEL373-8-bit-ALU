@@ -51,20 +51,14 @@ begin
      --variable data8_out : std_logic_vector (7 downto 0);
 		begin
 		 if (clock'Event and clock ='1') then 
-            if (buttonU = '1') then 
-                if (counter /= 1) then
-                    counter <= counter + 1;
-                end if;
+            if (buttonU = '1' and counter = 0) then 
+                counter <= counter + 1;
             end if;
-            if (buttonC = '1') then 
-                if (counter /= 2) then
-                    counter <= counter + 1;
-                end if;
+            if (buttonC = '1' and counter = 1) then 
+                counter <= counter + 1;
             end if;               
-            if (buttonD = '1') then 
-                if (counter /= 3) then
-                    counter <= counter + 1;
-                end if;
+            if (buttonD = '1' and counter = 2) then 
+                counter <= counter + 1;
             end if;
             if (buttonR = '1') then 
                 counter <= 0;

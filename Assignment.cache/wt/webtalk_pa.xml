@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Sat May 11 15:39:13 2019">
+<application name="pa" timeStamp="Sat May 11 22:16:59 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="e9e0a635805f4786a138c61a63f80344" type="ProjectID"/>
-<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+<property name="ProjectIteration" value="10" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,204 +17,24 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="CloseProject" value="1" type="JavaHandler"/>
-<property name="EditUndo" value="1" type="JavaHandler"/>
-<property name="OpenProject" value="3" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
-</item>
-<item name="Gui Resources Info">
-<property name="PAResourceCommand.PACommandNames_OPEN_PROJECT, Open Project..." value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, BCD_sevenseg - Behavioral (BCD_sevenseg.vhd" value="3" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, FSM - Behavioral (FSM.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, alu_design - Behavioral (alu_design.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, alu_op - Behavioral (alu_op.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, counter_top_level - Behavioral (two_digit_counter_for_PL2_lab_top_level_part_soln.vhd" value="13" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, register1 - Behavioral (register1.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, register1 - Behavioral (register2.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, top_level - Behavioral (top_level.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="4" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainToolbarMgr_OPEN, (String" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 113, 417" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 115, 417" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 123, 318" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 160, 356" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 251, 512" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 471, 354, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 591, 332" value="1" type="GuiResourceData"/>
-<property name="alu_design.vhd, 706, 340" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 1, 351" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 101, 258" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 101, 258, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 102, 348" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 115, 297" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 117, 96" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 117, 96, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 119, 478" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 12, 247" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 122, 336" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 122, 386" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 122, 77" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 122, 77, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 128, 302" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 134, 507" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 140, 469" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 15, 307" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 174, 76" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 180, 454" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 190, 523" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 197, 450" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 197, 451" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 20, 345" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 20, 360" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 210, 79" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 211, 486" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 222, 299" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 222, 516" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 224, 475" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 256, 478" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 262, 483" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 265, 471" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 266, 435" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 266, 435, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 270, 385" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 270, 385, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 270, 435" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 273, 392" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 275, 450" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 276, 396" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 276, 396, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 276, 450, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 28, 196" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 28, 196, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 281, 412" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 281, 412, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 29, 523" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 296, 369" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 30, 226" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 30, 226, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 307, 236" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 308, 347" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 312, 294" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 312, 314" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 316, 268" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 35, 215" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 35, 215, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 35, 353" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 350, 350" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 350, 350, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 356, 400" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 364, 386" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 364, 386, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 365, 330" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 365, 330, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 368, 367" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 368, 367, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 368, 397" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 368, 397, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 369, 354" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 369, 354, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 372, 383" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 372, 383, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 372, 397" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 372, 397, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 373, 367" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 373, 367, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 377, 418" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 379, 333" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 379, 333, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 379, 420" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 379, 420, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 382, 430" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 382, 430, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 383, 402" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 4, 347" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 403, 346" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 403, 346, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 404, 483" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 405, 366" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 405, 366, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 405, 402" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 405, 404" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 407, 471" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 411, 401" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 411, 401, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 413, 386" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 413, 386, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 419, 431" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 432, 407" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 432, 407, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 436, 416" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 436, 416, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 443, 398" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 445, 388" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 445, 388, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 450, 436" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 450, 436, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 460, 371" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 460, 371, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 503, 521" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 51, 415" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 585, 411" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 64, 356" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 71, 281" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 86, 314" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 88, 286" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 88, 286, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 94, 264" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 94, 264, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="alu_op.vhd, 94, 411, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 108, 500" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 112, 524" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 118, 199" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 121, 196" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 124, 398" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 124, 470" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 127, 400" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 147, 502" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 149, 501" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 214, 370" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 216, 367" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 237, 438" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 24, 452" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 242, 248" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 243, 283" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 28, 487" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 30, 509" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 36, 470" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 45, 456" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 52, 485" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 55, 456" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 60, 430" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 60, 488" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 67, 519" value="1" type="GuiResourceData"/>
-<property name="register1.vhd, 72, 424" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 103, 486" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 119, 348" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 145, 433" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 163, 534" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 192, 460" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 215, 291" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 215, 291, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 215, 332" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 215, 332, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 222, 521" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 251, 436" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 301, 427" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 305, 451" value="1" type="GuiResourceData"/>
-<property name="register2.vhd, 40, 490" value="1" type="GuiResourceData"/>
-<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 120, 453" value="1" type="GuiResourceData"/>
-<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 126, 399" value="1" type="GuiResourceData"/>
-<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 158, 453" value="1" type="GuiResourceData"/>
-<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 184, 295" value="1" type="GuiResourceData"/>
-<property name="two_digit_counter_for_PL2_lab_top_level_part_soln.vhd, 314, 264" value="1" type="GuiResourceData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="3" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="2" type="TclMode"/>
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="3" type="JavaHandler"/>
+<property name="EditUndo" value="2" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="2" type="JavaHandler"/>
+<property name="OpenProject" value="6" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="1" type="JavaHandler"/>
+<property name="ProgramDevice" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="3" type="JavaHandler"/>
+<property name="RunImplementation" value="6" type="JavaHandler"/>
+<property name="RunSchematic" value="3" type="JavaHandler"/>
+<property name="RunSynthesis" value="9" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="9" type="JavaHandler"/>
+<property name="SetSourceEnabled" value="2" type="JavaHandler"/>
+<property name="ShowView" value="6" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="3" type="JavaHandler"/>
 </item>
 </section>
 </application>

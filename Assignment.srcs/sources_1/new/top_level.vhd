@@ -66,24 +66,51 @@ component register2 port(
                           );
 end component;
 
-<<<<<<< HEAD
 component alu_op Port ( 
                         state3 : in INTEGER;
                         operand1 : in STD_LOGIC_VECTOR(7 downto 0);
                         operand2 : in STD_LOGIC_VECTOR(7 downto 0);
-                        operation : in STD_LOGIC_VECTOR(7 downto 0);
+                        operation : in STD_LOGIC_VECTOR(1 downto 0);
                         alu_out : out STD_LOGIC_VECTOR(7 downto 0)
                         );
-=======
-component BCD_sevenseg port(
-                          SW: in STD_LOGIC_VECTOR (7 downto 0);
-                          CA,CB,CC,CD,CE,CF,CG : out STD_LOGIC;
-                          AN : out STD_LOGIC_VECTOR (0 to 7)
-                          );
->>>>>>> 838ecdeaf2d6c1997666df1c72434e1cf9c95f80
 end component;
+
+--component BCD_sevenseg port(
+--                          SW: in STD_LOGIC_VECTOR (7 downto 0);
+--                          CA,CB,CC,CD,CE,CF,CG : out STD_LOGIC;
+--                          AN : out STD_LOGIC_VECTOR (0 to 7)
+--                          );
+--end component;
+
+component led_output Port ( 
+                            states : in INTEGER;
+                            reg1 : in STD_LOGIC_VECTOR(7 downto 0);
+                            reg2 : in STD_LOGIC_VECTOR(7 downto 0);
+                            alu_out : in STD_LOGIC_VECTOR(7 downto 0);
+                            led : out STD_LOGIC_VECTOR(7 downto 0)
+                            );
+end component;
+
+signal fsm_out : INTEGER;
+signal op1 : STD_LOGIC_VECTOR(7 downto 0);
+signal op2 : STD_LOGIC_VECTOR(7 downto 0);
+signal result : STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 
+    U1: FSM
+        port map (clock => CLK100MHZ, buttonU => BTNU, buttonC => BTNC, buttonD => BTND, buttonR => BTNR, state => fsm_out);
+        
+    U2: register1
+        port map (sw1_input => SW, state1 => fsm_out, reg1_out => op1);
 
+    U3: register2
+        port map (sw2_input => SW, state2 => fsm_out, reg2_out => op2);
+    
+    U4 : alu_op
+        port map (state3 => fsm_out, operand1 => op1, operand2 => op2, operation => SW(1 downto 0), alu_out => result);
+        
+    U5 : led_output
+        port map (states => fsm_out, reg1 => op1, reg2 => op2, alu_out => result, led => LED);
+        
 end Behavioral;
