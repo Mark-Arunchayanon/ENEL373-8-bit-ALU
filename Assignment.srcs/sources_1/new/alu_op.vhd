@@ -36,14 +36,35 @@ entity alu_op is
            state3 : in INTEGER;
            operand1 : in STD_LOGIC_VECTOR(7 downto 0);
            operand2 : in STD_LOGIC_VECTOR(7 downto 0);
-           operation : in STD_LOGIC_VECTOR(7 downto 0);
+           operation : in STD_LOGIC_VECTOR(1 downto 0);
            alu_out : out STD_LOGIC_VECTOR(7 downto 0)
            );
 end alu_op;
 
+
 architecture Behavioral of alu_op is
+
+signal end_result : STD_LOGIC_VECTOR(7 downto 0);
+signal op1 : STD_LOGIC_VECTOR(7 downto 0);
+signal op2 : STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 
+    alu : process (state3)
+        begin
+            op1 <= operand1;
+            op2 <= operand2;
+            if (state3 = 3) then
+                C1: case SW(1 downto 0) is
+                    when "00" => end_result <= op1 + op2;
+                    when "01" => end_result <= op1 - op2;
+                    when "10" => end_result <= op1 or op2; 
+                    when "11" => end_result <= op1 and op2; 
+                    when others => end_result <= end_result;
+                end case C1;
+            end if;
+            alu_out <= end_result;
+            
+        end process alu;
 
 end Behavioral;

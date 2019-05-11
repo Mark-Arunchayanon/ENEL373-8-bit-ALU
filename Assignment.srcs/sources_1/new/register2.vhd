@@ -52,6 +52,6 @@ begin
         
         reg2_out <= stored_data;
     
-    end process;
+    end process register2;
     
 end Behavioral;
