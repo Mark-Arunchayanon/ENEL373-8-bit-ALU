@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity register1 is
     Port ( 
-           sw2_input : in STD_LOGIC;
+           sw1_input : in STD_LOGIC;
            state2 : in INTEGER;
            reg1_out : out STD_LOGIC
            );
