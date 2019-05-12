@@ -44,24 +44,26 @@ end FSM;
 
 architecture Behavioral of FSM is
 
-signal counter : INTEGER range 0 to 3 :=0;
+
 
 begin
+
     fsm_design: process (clock)	
+    variable counter : INTEGER range 0 to 3 :=0;
      --variable data8_out : std_logic_vector (7 downto 0);
 		begin
 		 if (clock'Event and clock ='1') then 
             if (buttonU = '1' and counter = 0) then 
-                counter <= counter + 1;
+                counter := counter + 1;
             end if;
             if (buttonC = '1' and counter = 1) then 
-                counter <= counter + 1;
+                counter := counter + 1;
             end if;               
             if (buttonD = '1' and counter = 2) then 
-                counter <= counter + 1;
+                counter := counter + 1;
             end if;
             if (buttonR = '1') then 
-                counter <= 0;
+                counter := 0;
             end if;          
 		  end if;
 		  

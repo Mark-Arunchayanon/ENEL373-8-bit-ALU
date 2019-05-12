@@ -35,6 +35,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity alu_op is
     Port ( 
+           btnd : in STD_LOGIC;
            state3 : in INTEGER;
            operand1 : in STD_LOGIC_VECTOR(7 downto 0);
            operand2 : in STD_LOGIC_VECTOR(7 downto 0);
@@ -46,21 +47,23 @@ end alu_op;
 
 architecture Behavioral of alu_op is
 
-signal end_result : STD_LOGIC_VECTOR(7 downto 0);
+
 
 begin
 
     alu : process (state3)
+    variable end_result : STD_LOGIC_VECTOR(7 downto 0);
         begin
             if (state3 = 3) then
                 C1: case operation is
-                    when "00" => end_result <= operand1 + operand2;
-                    when "01" => end_result <= operand1 - operand2;
-                    when "10" => end_result <= operand1 or operand2;  
-                    when others => end_result <= operand1 and operand2;
+                    when "00" => end_result := operand1 + operand2;
+                    when "01" => end_result := operand1 - operand2;
+                    when "10" => end_result := operand1 or operand2;  
+                    when others => end_result := operand1 and operand2;
                 end case C1;
+                alu_out <= end_result;
             end if;
-            alu_out <= end_result;
+            
     end process alu;
 
 end Behavioral;

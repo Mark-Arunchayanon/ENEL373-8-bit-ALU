@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity led_output is
         Port ( 
+               clock : in STD_LOGIC;
                states : in INTEGER;
                reg1 : in STD_LOGIC_VECTOR(7 downto 0);
                reg2 : in STD_LOGIC_VECTOR(7 downto 0);
@@ -46,7 +47,7 @@ architecture Behavioral of led_output is
 signal output : STD_LOGIC_VECTOR(7 downto 0);
 
 begin
-    led_proc : process (states)
+    led_proc : process (clock)
         begin
             if (states = 0) then 
                 output <= "00000000";

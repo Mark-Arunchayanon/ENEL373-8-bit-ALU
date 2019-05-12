@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity register2 is
     Port ( 
+           btnc : in STD_LOGIC;
            sw2_input : in STD_LOGIC_VECTOR(7 downto 0);
            state2 : in INTEGER;
            reg2_out : out STD_LOGIC_VECTOR(7 downto 0)
@@ -41,17 +42,13 @@ end register2;
 
 architecture Behavioral of register2 is
 
-signal stored_data : STD_LOGIC_VECTOR(7 downto 0);
-
 begin
     register2 : process (state2)
     begin
-        if (state2 = 2) then 
-            stored_data <= sw2_input;
+        if (btnc = '1' and state2 = 2) then 
+            reg2_out <= sw2_input;
         end if;
         
-        reg2_out <= stored_data;
-    
     end process register2;
     
 end Behavioral;

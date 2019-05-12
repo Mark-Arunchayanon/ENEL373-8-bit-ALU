@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Sat May 11 22:16:51 2019
-| Host             : ESL19 running 64-bit major release  (build 9200)
+| Date             : Sun May 12 17:51:21 2019
+| Host             : ESL21 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
 | Design           : top_level
 | Device           : xc7a100tcsg324-3
@@ -51,7 +51,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |       76 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       25 |     63400 |            0.04 |
+|   LUT as Logic |    <0.001 |       26 |     63400 |            0.04 |
 |   CARRY4       |    <0.001 |        2 |     15850 |            0.01 |
 |   Register     |    <0.001 |       34 |    126800 |            0.03 |
 |   Others       |     0.000 |       10 |       --- |             --- |
