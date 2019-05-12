@@ -37,7 +37,8 @@ entity led_output is
                states : in INTEGER;
                reg1 : in STD_LOGIC_VECTOR(7 downto 0);
                reg2 : in STD_LOGIC_VECTOR(7 downto 0);
-               alu_out : in STD_LOGIC_VECTOR(7 downto 0);
+               reg3 : in STD_LOGIC_VECTOR(7 downto 0);
+              -- alu_out : in STD_LOGIC_VECTOR(7 downto 0);
                led : out STD_LOGIC_VECTOR(7 downto 0)
                );
 end led_output;
@@ -56,7 +57,7 @@ begin
             elsif (states = 2) then 
                 output <= reg2;
             elsif (states = 3) then
-                output <= alu_out;
+                output <= reg3;
             end if;
             
             led <= output;

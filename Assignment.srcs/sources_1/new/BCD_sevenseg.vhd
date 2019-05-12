@@ -62,7 +62,7 @@ begin
         end case;
      end process my_seg_proc;
           
-  AN <= "11111110"; 
+  AN <= "11111100"; 
   CG <= leds_out(0);
   CF <= leds_out(1);
   CE <= leds_out(2);

@@ -54,7 +54,7 @@ begin
     alu : process (state3)
     variable end_result : STD_LOGIC_VECTOR(7 downto 0);
         begin
-            if (state3 = 3) then
+            if (state3 = 3 and btnd = '1') then
                 C1: case operation is
                     when "00" => end_result := operand1 + operand2;
                     when "01" => end_result := operand1 - operand2;

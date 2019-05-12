@@ -39,10 +39,12 @@ entity FSM is
          buttonD : in STD_LOGIC;
          buttonR : in STD_LOGIC;
          state : out INTEGER
+         
          );
 end FSM;
 
 architecture Behavioral of FSM is
+
 
 
 
@@ -62,7 +64,7 @@ begin
             if (buttonD = '1' and counter = 2) then 
                 counter := counter + 1;
             end if;
-            if (buttonR = '1') then 
+            if (buttonR = '1') then
                 counter := 0;
             end if;          
 		  end if;

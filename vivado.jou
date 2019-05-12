@@ -2,14 +2,40 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri May 10 23:27:54 2019
-# Process ID: 16840
+# Start of session at: Sun May 12 21:17:53 2019
+# Process ID: 8392
 # Current directory: P:/ENEL373/Assignment/Lab_A01_group_15
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2692 P:\ENEL373\Assignment\Lab_A01_group_15\Assignment.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11120 P:\ENEL373\Assignment\Lab_A01_group_15\Assignment.xpr
 # Log file: P:/ENEL373/Assignment/Lab_A01_group_15/vivado.log
 # Journal file: P:/ENEL373/Assignment/Lab_A01_group_15\vivado.jou
 #-----------------------------------------------------------
-start_guioopen_project P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.xpruupdate_compile_order -fileset sources_1
-close [ open P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/BCD_sevenseg.vhd w ]
-add_files P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/BCD_sevenseg.vhd
+start_gui
+open_project P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.xpr
 update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run syntreset_run synth_1 -noclean_dir 
+un impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.runs/impl_1/top_level.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.runs/impl_1/top_level.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+synth_design -rtl -name rtl_1
+set_property is_enabled true [get_files  P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/BCD_sevenseg.vhd]
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.srcs/sources_1/new/BCD_sevenseg.vhd]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
