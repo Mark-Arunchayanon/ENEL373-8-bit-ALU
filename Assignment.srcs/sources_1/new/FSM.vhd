@@ -8,7 +8,8 @@
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
--- Description: 
+-- Description: Finite State Machine, increments through 4 states which is triggered using 4 buttons.
+--              Outputs the state to all components
 -- 
 -- Dependencies: 
 -- 

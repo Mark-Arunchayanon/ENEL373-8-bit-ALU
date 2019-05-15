@@ -8,8 +8,9 @@
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
--- Description: 
--- 
+-- Description: ALU takes in operands from first and second register, operation from 2 switches and state from FSM.
+--              Carries out the operation with the 2 operands and outputs the result 
+--
 -- Dependencies: 
 -- 
 -- Revision:
@@ -24,14 +25,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity alu_op is
     Port ( 

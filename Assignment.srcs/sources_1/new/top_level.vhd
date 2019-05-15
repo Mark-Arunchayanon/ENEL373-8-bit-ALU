@@ -22,26 +22,21 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity top_level is
   Port ( 
-         CLK100MHZ : in STD_LOGIC;
-         SW : in STD_LOGIC_VECTOR(7 downto 0);
-         BTNU, BTNC, BTND, BTNR: in STD_LOGIC;
-         LED : out STD_LOGIC_VECTOR(7 downto 0)
+         CLK100MHZ : in STD_LOGIC;          -- Clock at 100MHz
+         SW : in STD_LOGIC_VECTOR(7 downto 0);          -- 8 switches
+         BTNU, BTNC, BTND, BTNR: in STD_LOGIC;          -- Up, center, down and right buttons
+         LED : out STD_LOGIC_VECTOR(7 downto 0)         -- Output as 8 LEDs
          );
 end top_level;
 
 architecture Behavioral of top_level is
 
+-- Contains 4 states (0-3) 0 is the start state, 1 is to store the first reg
+-- 2 is to store the second register, 3 is to calculate and display result
+-- Outputs the states to other components
 component FSM port( 
                     clock : in STD_LOGIC;
                     buttonU : in STD_LOGIC;
@@ -52,6 +47,7 @@ component FSM port(
                     );
 end component;
 
+-- Stores the first operand from the 8 switches and outputs the operand 
 component register1 port(
                           btnu : in STD_LOGIC;
                           sw1_input : in STD_LOGIC_VECTOR(7 downto 0);
@@ -60,6 +56,7 @@ component register1 port(
                           );
 end component;
 
+-- Stores the second operand from the 8 switches and outputs the operand
 component register2 port(
                           
                           btnc : in STD_LOGIC;
@@ -69,6 +66,8 @@ component register2 port(
                           );
 end component;
 
+-- Reads the input operation from the 2 switches and does the calculations according to the operation
+-- 00 for +, 01 for -, 10 for and , and 11 for or
 component alu_op Port ( 
                         btnd : in STD_LOGIC;
                         state3 : in INTEGER;
@@ -79,13 +78,7 @@ component alu_op Port (
                         );
 end component;
 
---component BCD_sevenseg port(
---                          SW: in STD_LOGIC_VECTOR (7 downto 0);
---                          CA,CB,CC,CD,CE,CF,CG : out STD_LOGIC;
---                          AN : out STD_LOGIC_VECTOR (0 to 7)
---                          );
-
-
+-- Stores the calculation result from the ALU and outputs trhe result
 component output_reg port(
                           alu_in : in STD_LOGIC_VECTOR (7 downto 0);
                           state3 : in INTEGER;
@@ -94,6 +87,8 @@ component output_reg port(
                   
 end component;
 
+-- Reads the output of the FSM, first register, second register and the ALU
+-- DIsplays the stored operands, operation and results according to the current state
 component led_output port ( 
                             clock : in STD_LOGIC;
                             states : in INTEGER;

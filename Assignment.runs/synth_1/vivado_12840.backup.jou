@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun May 12 22:52:15 2019
+# Process ID: 12840
+# Current directory: P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.runs/synth_1
+# Command line: vivado.exe -log top_level.vds -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.runs/synth_1/top_level.vds
+# Journal file: P:/ENEL373/Assignment/Lab_A01_group_15/Assignment.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
