@@ -1,21 +1,11 @@
 ---------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Saranya Ramani (27179399), Nathan James (44005459), Mark Pakorn Arunchyanon (78980462)
 -- 
--- Create Date: 15.05.2019 15:23:53
--- Design Name: 
--- Module Name: alu_design_tb - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
+-- Create Date: 24/05/2019
+-- Design Name: tesbench.vhd
+-- Module Name: ALU + REGS + FSM
+
 ----------------------------------------------------------------------------------
 
 
@@ -59,10 +49,12 @@ architecture Behavioral of testbench_tb is
     
     --signal reg3_out : STD_LOGIC_VECTOR (7 downto 0);
     
+--Defining clock period for the simulation of process
     constant ClockPeriod : TIME := 50 ns;
     
 begin
-    
+
+--port map of alu_op    
     UUT: alu_op port map (
                               btnd => btnd_in, --Button down 
                               state3 => state3_in,    --state 
@@ -70,7 +62,7 @@ begin
                               operand2 => operand2_in,  --register 2
                               operation => operation_in,  --operation input
                               output => alu_output);  --result );
-                              
+                             
     process
         begin
         btnd_in <= '1';
