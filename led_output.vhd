@@ -2,9 +2,11 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 11.05.2019 21:24:44
--- Design Name: 
--- Module Name: led_output - Behavioral
+-- Engineer: Saranya Ramani (27179399), Nathan James (44005459), Mark Pakorn Arunchyanon (78980462)
+-- 
+-- Create Date: 12/04/2019
+-- Design Name: led_output - Behavioral
+-- Module Name: ALU + REGS + FSM
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
