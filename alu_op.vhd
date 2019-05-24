@@ -1,22 +1,14 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+
+-- Engineer: Saranya Ramani (27179399), Nathan James (44005459), Mark Pakorn Arunchyanon (78980462)
 -- 
--- Create Date: 10.05.2019 23:05:11
--- Design Name: 
--- Module Name: alu_op - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
+-- Create Date: 12/04/2019
+-- Design Name: alu_op
+-- Module Name: ALU + REGS + FSM
+
 -- Description: ALU takes in operands from first and second register, operation from 2 switches and state from FSM.
 --              Carries out the operation with the 2 operands and outputs the result 
 --
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
 ----------------------------------------------------------------------------------
 
 
