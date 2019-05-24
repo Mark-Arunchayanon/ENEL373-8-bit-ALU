@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Saranya Ramani (27179399), Nathan James (44005459), Mark Pakorn Arunchyanon (78980462)
 -- 
 -- Create Date: 10.05.2019 20:54:31
 -- Design Name: 
